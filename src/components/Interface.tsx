@@ -67,21 +67,27 @@ const TriangleMaskDiv = styled.div`
 const InterFace: React.FC = () => {
   return (
     <div
-    style={{
-      width: "100vw",
-      height: "100vh",
-      backgroundImage: `linear-gradient(to bottom, rgba(250, 60, 102, 0.5), rgba(250, 60, 102, 0.5)), url('/Images/header.png')`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundAttachment: "fixed",
-    }}
+      style={{
+        width: "100vw",
+        height: "100vh",
+        backgroundImage: `url('/Images/main.gif')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+      }}
     >
       <TriangleMaskDiv className="flex flex-col w-full h-full items-center">
         <div className="w-full lg:max-w-[1260px]">
-          <Link to="/">
-            <h1 className="text-[#222436] font-josefin text-bold w-full text-start text-[20px] text-bold sm:text-[40px] px-[15px] pt-[20px] sm:px-[15px] sm:pt-[40px] md:px-[30px] md:pt-[50px] lg:pt-[100px]">
-              Decision Lift
-            </h1>
+          <Link
+            className="flex flex-row items-center text-[#222436] font-josefin text-bold w-full text-start text-[20px] text-bold sm:text-[40px] px-[15px] pt-[20px] sm:px-[15px] sm:pt-[40px] md:px-[30px] md:pt-[50px] lg:pt-[100px]"
+            to="/"
+          >
+            <img
+              src="/Logo/logoImage.png"
+              alt="logo"
+              className="h-[60px] pb-[10px]"
+            />
+            <h1>ecision Lift</h1>
           </Link>
           <div className="px-[20px]">
             <div className="flex flex-col py-[40px] ">
@@ -92,9 +98,7 @@ const InterFace: React.FC = () => {
                 <AnimatedSubHeading className="text-[#FFF] text-center md:text-end float-right text-[30px] [font:600_20px/1.8125em_Montserrat,_Helvetica,_Sans-Serif] tracking-[-0.3px] mb-[1em]">
                   Let us build the AI algorithms for your success!
                 </AnimatedSubHeading>
-                <AnimatedButton
-                  className="text-[#0C0E1A] inline-block uppercase [font:600_15px/1.8125em_Montserrat,_Helvetica,_Sans-Serif] tracking-[2px] px-[46px] py-[13px] bg-[#FFF] rounded-[8px] leading-[18px] no-underline [transition:all_0.5s] hover:bg-[#e0e0e0]"
-                >
+                <AnimatedButton className="text-[#0C0E1A] inline-block uppercase [font:600_15px/1.8125em_Montserrat,_Helvetica,_Sans-Serif] tracking-[2px] px-[46px] py-[13px] bg-[#FFF] rounded-[8px] leading-[18px] no-underline [transition:all_0.5s] hover:bg-[#e0e0e0]">
                   BOOK NOW
                 </AnimatedButton>
               </div>
