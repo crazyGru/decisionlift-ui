@@ -14,7 +14,7 @@ const Homepage: React.FC = () => {
 
       <div className="flex flex-col shadow-lg mx-[20px] md:mx-[30px] lg:mx-[80px] mb-[50px]">
         <Recent />
-        {/* <Research /> */}
+        <Research />
         <Press />
         <Partner />
         <Footer />

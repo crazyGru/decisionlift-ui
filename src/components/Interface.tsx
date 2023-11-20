@@ -79,13 +79,13 @@ const InterFace: React.FC = () => {
       <TriangleMaskDiv className="flex flex-col w-full h-full items-center">
         <div className="w-full lg:max-w-[1260px]">
           <Link
-            className="flex flex-row items-center text-[#222436] font-josefin text-bold w-full text-start text-[20px] text-bold sm:text-[40px] px-[15px] pt-[20px] sm:px-[15px] sm:pt-[40px] md:px-[30px] md:pt-[50px] lg:pt-[100px]"
+            className="flex flex-row items-center text-[#222436] font-josefin text-bold w-full text-start text-[35px] text-bold sm:text-[40px] px-[15px] pt-[20px] sm:px-[15px] sm:pt-[40px] md:px-[30px] md:pt-[50px] lg:pt-[100px]"
             to="/"
           >
             <img
               src="/Logo/logoImage.png"
               alt="logo"
-              className="h-[60px] pb-[10px]"
+              className="h-[40px] md:h-[60px] pb-[10px]"
             />
             <h1>ecision Lift</h1>
           </Link>
@@ -95,7 +95,7 @@ const InterFace: React.FC = () => {
                 AI PRODUCTS FOR YOUR LOGISTICS BUSINESS
               </AnimatedMainHeading>
               <div className="flex flex-col items-center md:items-end">
-                <AnimatedSubHeading className="text-[#FFF] text-center md:text-end float-right text-[30px] [font:600_20px/1.8125em_Montserrat,_Helvetica,_Sans-Serif] tracking-[-0.3px] mb-[1em]">
+                <AnimatedSubHeading className="text-[#222436] text-center md:text-end float-right text-[30px] [font:600_20px/1.8125em_Montserrat,_Helvetica,_Sans-Serif] tracking-[-0.3px] mb-[1em]">
                   Let us build the AI algorithms for your success!
                 </AnimatedSubHeading>
                 <AnimatedButton className="text-[#0C0E1A] inline-block uppercase [font:600_15px/1.8125em_Montserrat,_Helvetica,_Sans-Serif] tracking-[2px] px-[46px] py-[13px] bg-[#FFF] rounded-[8px] leading-[18px] no-underline [transition:all_0.5s] hover:bg-[#e0e0e0]">
