@@ -7,7 +7,7 @@ axios.defaults.baseURL = import.meta.env.VITE_REACT_BASE_URL;
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Homepage />} />
+      <Route path="/" index element={<Homepage />} />
     </Routes>
   );
 }

@@ -43,29 +43,29 @@ const Building: React.FC = () => {
 
           <ImageCard
             src="./Images/build (1).png"
-            alt="Biology"
-            title="Biology"
+            alt="Routing Optimization"
+            title="Routing Optimization"
             className=""
             url=""
           />
           <ImageCard
             src="./Images/1 (2).png"
-            alt="Logistics"
-            title="Logistics"
+            alt="Transportation"
+            title="Transportation"
             className=""
             url=""
           />
           <ImageCard
             src="./Images/1 (3).png"
-            alt="Electronic Design"
-            title="Electronic Design"
+            alt="Bin Packing"
+            title="Bin Packing"
             className=""
             url=""
           />
           <ImageCard
             src="./Images/build (4).png"
-            alt="Energy"
-            title="Energy"
+            alt="Assignment"
+            title="Assignment"
             className=""
             url=""
           />
@@ -87,8 +87,8 @@ const Building: React.FC = () => {
           </div>
           <ImageCard
             src="./Images/build (1).png"
-            alt="Biology"
-            title="Biology"
+            alt="Routing Optimization"
+            title="Routing Optimization"
             className=""
             url=""
           />
@@ -97,7 +97,7 @@ const Building: React.FC = () => {
               className="text-[#364d55] text-bold text-[20px] pt-[27px] pr-[0] pb-[10px] pl-[20px] tracking-[-0.3px]"
               style={{ fontWeight: "bolder" }}
             >
-              Logistics
+              Transportation
             </h4>
             <a
               href=""
@@ -108,8 +108,8 @@ const Building: React.FC = () => {
           </div>
           <ImageCard
             src="./Images/1 (3).png"
-            alt="Electronic Design"
-            title="Electronic Design"
+            alt="Bin Packing"
+            title="Bin Packing"
             className=""
             url=""
           />
@@ -118,7 +118,7 @@ const Building: React.FC = () => {
               className="text-[#364d55] text-bold text-[20px] pt-[27px] pr-[0] pb-[10px] pl-[20px] tracking-[-0.3px]"
               style={{ fontWeight: "bolder" }}
             >
-              Energy
+              Assignment
             </h4>
             <a
               href=""

@@ -1,6 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore from "swiper";
-import Navigation from "swiper";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -21,14 +19,17 @@ const TriangleMaskDiv = styled.div`
     width: 100%;
     height: 100%;
     background-color: #fff; // Background color of the overlay
-    clip-path: polygon(0 0, 100% 10px, 0 20%); // Triangle cut-out at the top left
+    clip-path: polygon(
+      0 0,
+      100% 10px,
+      0 20%
+    ); // Triangle cut-out at the top left
   }
 `;
 
 interface LatestProps {
   url: string;
   title: string;
-  date: string;
   description: string;
   imageUrl: string;
 }
@@ -36,12 +37,11 @@ interface LatestProps {
 const Latest: React.FC<LatestProps> = ({
   url,
   title,
-  date,
   description,
   imageUrl,
 }) => {
   return (
-    <div className="flex flex-col p-[0_44px_0_44px]">
+    <div className="flex flex-col p-[0_24px_0_24px]">
       <div
         className="w-full h-full border-4 border-solid border-white shadow mx-0 my-0 transition-transform duration-300 hover:scale-105"
         style={{
@@ -81,11 +81,10 @@ const Latest: React.FC<LatestProps> = ({
         className="text-sm text-gray-500 text-[#777777] pb-2.5 relative"
         style={{ position: "relative" }}
       >
-        {date}
         <span
           style={{
             display: "block",
-            width: "60px",
+            width: "80px",
             height: "2px",
             backgroundColor: "#aaa",
             position: "absolute",
@@ -105,51 +104,29 @@ const Latest: React.FC<LatestProps> = ({
         }}
       >
         {description}
-      </p>{" "}
-      {/* Truncate after 5 lines */}
+      </p>
     </div>
   );
 };
 
 const Recent: React.FC = () => {
-  const swiperRef = useRef<SwiperCore>(null);
-
-  const goNext = () => {
-    if (swiperRef.current && "slideNext" in swiperRef.current) {
-      swiperRef.current.slideNext();
-    }
-  };
-
-  const goPrev = () => {
-    if (swiperRef.current && "slidePrev" in swiperRef.current) {
-      swiperRef.current.slidePrev();
-    }
-  };
   return (
     <>
       <TriangleMaskDiv className="flex flex-col w-full items-end text-white pt-[60px] pr-[20px] pb-[10px]">
-        <h3 className="font-bold text-[50px]">Latest</h3>
+        <h3 className="font-bold text-[50px]">Get Help Now</h3>
         <h5 className="text-[15px]">
           Our latest updates from across our channels
         </h5>
       </TriangleMaskDiv>
       <div
-        className="flex flex-row pt-[40px] pb-[100px] bg-[#f4f4f4]"
+        className="flex flex-row pt-[70px] pb-[100px] px-[30px] sm:px-[60px] bg-[#f4f4f4]"
         style={{
           backgroundImage: "url('/Images/search.png')",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "left top",
         }}
       >
-        <button
-          onClick={goPrev}
-          className="text-3xl text-black bg-transparent border-none cursor-pointer hover:bg-white hover:text-gray-500 p-2 rounded-full"
-        >
-          <SlArrowLeftCircle />
-        </button>
         <Swiper
-          //   ref={swiperRef}
-          //   modules={[Navigation]}
           slidesPerView={1}
           spaceBetween={10}
           navigation={{
@@ -171,73 +148,36 @@ const Recent: React.FC = () => {
           <SwiperSlide>
             <Latest
               url="https://example.com"
-              title="Sample Title"
-              date="January 1, 2023"
-              description="Long description text goes here Long description text goes hereLong description text goes hereLong description text goes hereLong description text goes here"
+              title="Optimize your  Truck Load"
+              description="Our optimizers will allow you to automate your  truck loading in few clicks, saving you space and loading time"
               imageUrl="./Images/1 (2).png"
             />
           </SwiperSlide>
           <SwiperSlide>
             <Latest
               url="https://example.com"
-              title="Sample Title"
-              date="January 1, 2023"
-              description="Long description text goes here Long description text goes hereLong description text goes hereLong description text goes hereLong description text goes here"
+              title="Build Routings For Your Last Mile Delivery Business"
+              description="Build and integrate Routing Optimization into your delivery business allowing"
               imageUrl="./Images/1 (19).png"
             />
           </SwiperSlide>
           <SwiperSlide>
             <Latest
               url="https://example.com"
-              title="Sample Title Sample TitleSample TitleSample Title Sample Title"
-              date="January 1, 2023"
-              description="Long description text goes here Long description text goes hereLong description text goes hereLong description text goes hereLong description text goes here"
+              title="Optimally Assign your Resources to Tasks"
+              description="Whether you have a fleet of taxis and drivers or warehouse robots, minimize the cost of assigning the right resource to the the right task"
               imageUrl="./Images/1 (5).png"
             />
           </SwiperSlide>
           <SwiperSlide>
             <Latest
               url="https://example.com"
-              title="Sample Title Sample Title Sample Title"
-              date="January 1, 2023"
-              description="Long description text goes here Long description text goes hereLong description text goes hereLong description text goes hereLong description text goes here"
-              imageUrl="./Images/1 (9).png"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Latest
-              url="https://example.com"
-              title="Sample Title Sample Title Sample Title"
-              date="January 1, 2023"
-              description="Long description text goes here Long description text goes hereLong description text goes hereLong description text goes hereLong description text goes here"
-              imageUrl="./Images/1 (9).png"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Latest
-              url="https://example.com"
-              title="Sample Title Sample Title Sample Title"
-              date="January 1, 2023"
-              description="Long description text goes here Long description text goes hereLong description text goes hereLong description text goes hereLong description text goes here"
-              imageUrl="./Images/1 (9).png"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Latest
-              url="https://example.com"
-              title="Sample Title Sample Title Sample Title"
-              date="January 1, 2023"
-              description="Long description text goes here Long description text goes hereLong description text goes hereLong description text goes hereLong description text goes here"
+              title="Store your Inventory for maximal Utimization"
+              description="Do you have a warehouse with limited space and you want to increase your inventory without moving to a bigger space? We have solutions for you"
               imageUrl="./Images/1 (9).png"
             />
           </SwiperSlide>
         </Swiper>
-        <button
-          onClick={goNext}
-          className="text-3xl text-black bg-transparent border-none cursor-pointer hover:bg-white hover:text-gray-500 p-2 rounded-full"
-        >
-          <SlArrowRightCircle />
-        </button>
       </div>
     </>
   );

@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
 
   return (
     <div
-      className="relative flex flex-col gap-[20px] px-[40px] pt-[40px] pb-[60px] items-center text-center text-[#CCCCCC] bg-[#364d55]"
+      className="relative flex flex-col gap-[20px] px-[80px] pt-[70px] pb-[90px] items-center text-center text-[#CCCCCC] bg-[#364d55]"
       style={{
         backgroundImage: "url('/Images/footer.png')",
         backgroundRepeat: "no-repeat",

@@ -92,14 +92,14 @@ const InterFace: React.FC = () => {
           <div className="px-[20px]">
             <div className="flex flex-col py-[40px] ">
               <AnimatedMainHeading className="text-[#0C0E1A] md:[font:700_4.8125em/95px_Montserrat,_Helvetica,_Sans-Serif] [font:700_50px/70px_Montserrat,_Helvetica,_Sans-Serif] text-center md:text-left tracking-[-0.3px] pb-[150px]">
-                AI PRODUCTS FOR YOUR LOGISTICS BUSINESS
+                No Code Resource Optimization Solutions
               </AnimatedMainHeading>
               <div className="flex flex-col items-center md:items-end">
                 <AnimatedSubHeading className="text-[#222436] text-center md:text-end float-right text-[30px] [font:600_20px/1.8125em_Montserrat,_Helvetica,_Sans-Serif] tracking-[-0.3px] mb-[1em]">
-                  Let us build the AI algorithms for your success!
+                  Give a spin by yourself
                 </AnimatedSubHeading>
                 <AnimatedButton className="text-[#0C0E1A] inline-block uppercase [font:600_15px/1.8125em_Montserrat,_Helvetica,_Sans-Serif] tracking-[2px] px-[46px] py-[13px] bg-[#FFF] rounded-[8px] leading-[18px] no-underline [transition:all_0.5s] hover:bg-[#e0e0e0]">
-                  BOOK NOW
+                  Try Now
                 </AnimatedButton>
               </div>
             </div>
